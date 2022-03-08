@@ -1,0 +1,56 @@
+.row {
+  &:after{
+  content: "";
+  display: table;
+  clear: both;
+  }
+}
+
+.productClass, #productType{
+    width: 20%;
+    padding: 6px;
+    margin: 3px 8px;
+    border: 1px solid $hr-color;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+
+  label {
+    padding: 5px 5px 5px 0;
+    display: inline-block;
+    padding: 15px;
+
+     &-product{
+       padding-left: 33px;
+       width: 100%;
+    }
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 130px;
+  }
+
+  %col{
+   float: left;
+   margin-top: 4px;
+  }
+  .col{
+    &-25{
+      @extend %col;
+      width: 7%;
+    }
+    &-30{
+      @extend %col;
+      width: 10%;
+    }
+    &-50{
+      width: 70%;
+    }
+    &-75{
+      @extend %col;
+      width: 75%;
+    }
+  }
+

@@ -1,0 +1,65 @@
+@media screen and (max-width: 1094px) {
+
+    #productType{
+      width: 100%;
+    }
+    .container{
+      margin: 0;
+    }
+    #title{
+    padding-top: 17px;
+    padding-left: 20px;
+    }
+    .buttons{
+     right: 0px;
+     margin-right: 0;
+    }
+    .productClass{
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .col{
+      &-25{
+        width: 100%;
+        margin-top: 0;
+      }
+      &-30{
+        width: 100%;
+        margin-top: 0;
+      }
+      &-50{
+        width: 100%;
+        margin-top: 0;
+      }
+      &-75{
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+
+    
+}
+  @media(max-width: 384px){
+    
+    #title{
+      font-size: 10px;
+      padding-top: 35px;
+    }
+    .buttons{
+      button{
+      margin: 15px 0 0 0;
+      display: inline-block;
+      padding: 3px;
+      font-size: 11px;
+      }
+    }
+    .col{
+      &-30{
+        width: 100%;
+      }
+      &-50{
+        width: 100%;
+      } 
+    }
+  }

@@ -1,0 +1,177 @@
+@media(min-width:1501px){
+    .box-item {
+      flex-basis: 20%;
+      
+    }
+    #title{
+      left: 146px;
+    }
+    .buttons{
+      right: 22px;
+    }
+  }
+  
+  @media(min-width: 1333px) and (max-width:1500px) {
+    .box-item {
+      flex-basis: 20%;
+      
+    }
+    #title{
+      left: 146px;
+    }
+    .buttons{
+      right: -15px;
+    }
+  }
+  
+  @media(min-width: 1073px) and (max-width: 1332px) {
+     .box-item {
+      flex-basis: 20%;
+      
+    }
+    #title{
+      left: 146px;
+    }
+    .buttons{
+      right: -65px;
+    }
+  
+  }
+  @media(min-width: 901px) and (max-width:1072px){
+    #title{
+      left: 98px;
+    }
+    .buttons{
+      right: -90px;
+    }
+    .box{
+      &-row{
+        padding-left: 10%;
+      }
+      &-item{
+        flex-basis: 20%;
+      }
+    }
+  }
+  
+  @media(min-width: 801px) and (max-width: 900px) {
+    #title{
+      left: 88px;
+    }
+    .buttons{
+      right: -110px;
+    }
+    .box{
+      &-row{
+        padding-left: 10%;
+      }
+      &-item{
+        flex-basis: 20%;
+      }
+    }
+   
+  }
+  @media(min-width: 699px) and (max-width:800px){
+    #title{
+      left: 58px;
+      font-size: 15px;
+    }
+    .buttons{
+      right: -120px;
+    }
+    .box{
+      &-row{
+        padding-left: 7%;
+      }
+      &-item{
+        font-size: 12px;
+      }
+    }
+ 
+  }
+  
+  @media(min-width: 555px) and (max-width: 699px) {
+    #title{
+      left: 48px;
+      font-size: 15px;
+    }
+    .buttons{
+      right: -150px;
+    }
+    .box{
+      &-row{
+        padding-left: 7%;
+      }
+      &-item{
+        font-size: 12px;
+      }
+    }
+  }
+  
+  @media(max-width: 555px) {
+    main{
+      min-height: 125vh;
+    }
+    #title{
+      left: 10px;
+      padding-left: 9px;
+    }
+    .buttons{
+      right: 10px;
+      margin-right: 0;
+      a{
+        margin-right: 2px;
+        padding: 6px;
+         &:nth-child(2){
+          margin-right: 12px;
+        }
+      }
+    }
+    .box{
+      &-row{
+        padding-left: 0;
+      }
+      &-item{
+        flex-basis: 100%;
+        height: 80px;
+        padding: 2px;
+        font-size: 15px;
+      }
+      &-item-wrapper{
+        p{
+          transform: translateY(-48px);
+        }
+      }
+    }
+ 
+  }
+  @media(max-width: 407px){
+    #title{
+      font-size: 14px;
+    }
+    .buttons{
+      a{
+      margin-right: 2px;
+      padding: 4px;
+       &:nth-child(2){
+        margin-right: 8px;
+       }
+    }
+    }
+  
+  }
+  @media(max-width: 357px){
+    #title{
+      font-size: 10px;
+      margin-bottom: 8px;
+    }
+    .buttons{
+      margin-bottom: -15px;
+      a{
+        display: block;
+        padding: 1px;
+        margin: 4px;
+      }
+    }
+
+  }
