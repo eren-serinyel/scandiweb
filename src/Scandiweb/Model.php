@@ -6,7 +6,7 @@ use PDOException;
 
 class Model extends Database
 {
-    public string $sku, $name, $price, $attr;
+    protected string $sku, $name, $price, $attr;
 
     public function create($req): bool
     {
