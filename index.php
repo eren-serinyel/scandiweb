@@ -9,5 +9,5 @@ $router = new Router();
 
 $router->get('/', 'index');
 $router->post('/', 'destroy');
-$router->get('/add-product', 'create');
-$router->post('/add-product', 'store');
+$router->get('/add-product', 'createIndex');
+$router->post('/add-product', 'store');;

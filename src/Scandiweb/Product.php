@@ -2,15 +2,15 @@
 
 namespace Scandiweb;
 
-class Product extends Database
+class Product extends Model
 {
     public function index()
     {
-        $products = $this->getAll();
+        $products = $this->all();
         require 'templates/list.php';
     }
 
-    public function create()
+    public function createIndex()
     {
         require 'templates/add.php';
     }
@@ -20,14 +20,14 @@ class Product extends Database
         $product = '\\Scandiweb\\' . $_REQUEST['productType'];
         $product = new $product();
         $product->add($_REQUEST);
+        $this->index();
     }
 
     public function destroy()
     {
         foreach ($_REQUEST as $req) {
-            $this->deleteById($req);
+            $this->delete($req);
         }
-        $products = $this->getAll();
-        require 'templates/list.php';
+        $this->index();
     }
 }

@@ -19,22 +19,5 @@ class Database
         }
     }
 
-    public function getAll()
-    {
-        $pre = $this->db->prepare('SELECT * FROM products');
-        $pre->execute();
-        return $pre->fetchAll();
-    }
 
-    public function deleteById($id)
-    {
-        $pre = $this->db->prepare('DELETE FROM products WHERE id = ' . $id);
-        $pre->execute();
-    }
-
-    public function createNew($req)
-    {
-        $pre = $this->db->prepare('INSERT INTO products (sku, name, price, attr) VALUES (?,?,?,?)');
-        $pre->execute([$req['sku'], $req['name'], $req['price'], $req['attr']]);
-    }
 }
