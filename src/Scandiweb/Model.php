@@ -6,7 +6,7 @@ use PDOException;
 
 class Model extends Database
 {
-    protected string $sku, $name, $price, $attr;
+    public string $sku, $name, $price, $attr;
 
     public function create($req): bool
     {
@@ -16,7 +16,7 @@ class Model extends Database
             $pre->execute([$this->sku, $this->name, $this->price, $this->attr]);
         } catch (PDOException $pe) {
             if ($pe->errorInfo[1] == 1062) {
-                $exists = true;
+                 $exists = true;
             }
         }
         return $exists;

@@ -20,5 +20,4 @@ class DVD extends Model
     {
         $this->delete($id);
     }
-    
 }

@@ -10,4 +10,4 @@ $router = new Router();
 $router->get('/', 'index');
 $router->post('/', 'destroy');
 $router->get('/add-product', 'createIndex');
-$router->post('/add-product', 'store');;
+$router->post('/add-product', 'store');
