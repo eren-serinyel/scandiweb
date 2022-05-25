@@ -54,12 +54,14 @@ class Model extends Database
         $pre = $this->getDb()->prepare('INSERT INTO products (sku, name, price, attr) VALUES (?,?,?,?)');
         try {
             $pre->execute([$this->sku, $this->name, $this->price, $this->attr]);
+            header("Location:/");
         } catch (PDOException $pe) {
             if ($pe->errorInfo[1] == 1062) {
                  $exists = true;
             }
         }
         return $exists;
+
     }
 
     public function delete($id)

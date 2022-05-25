@@ -14,7 +14,6 @@ class DVD extends Model
         if ($create) {
             header("refresh:0;url=about:blank" );
             exit();
-
         }
     }
 
