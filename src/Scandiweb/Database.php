@@ -7,7 +7,18 @@ use PDOException;
 
 class Database
 {
-    public $db;
+    private $db;
+
+    public function getDb(): PDO
+    {
+        return $this->db;
+    }
+
+    public function setDb(PDO $db): void
+    {
+        $this->db = $db;
+    }
+
 
     public function __construct()
     {

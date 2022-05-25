@@ -20,7 +20,7 @@
 
 <main>
     <div class="container">
-        <form action="/add-product" id="product_form" method="post">
+        <form action="/add-product" id="product_form" method="post" autocomplete="off">
             <div class="row">
                 <div class="col-25">
                     <label>SKU</label>

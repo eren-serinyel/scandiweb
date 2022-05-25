@@ -6,13 +6,14 @@ class Book extends Model
 {
     public function add($req)
     {
-        $this->sku = $req['sku'];
-        $this->name = $req['name'];
-        $this->price = $req['price'];
-        $this->attr = $req['weight'] . ' KG';
+        $this->setSku($req['sku']);
+        $this->setName($req['name']);
+        $this->setPrice($req['price']);
+        $this->setAttr($req['weight'] . ' KG');
         $create = $this->create($req);
         if ($create) {
-            die("This product with sku is already exists");
+            header("refresh:0;url=about:blank" );
+            exit();
         }
     }
 
